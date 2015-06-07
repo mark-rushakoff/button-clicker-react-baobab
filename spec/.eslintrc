@@ -1,0 +1,19 @@
+extends: ../.eslintrc
+
+env:
+  jasmine: true
+
+globals:
+  $: false
+  React: false
+
+  Simulate: false
+  TestUtils: false
+
+rules:
+  comma-spacing: 0 # TODO: revisit
+  key-spacing: 0
+  quotes: 0
+  space-in-brackets: 0
+
+# vi: ft=yaml

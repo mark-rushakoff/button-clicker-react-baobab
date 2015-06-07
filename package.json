@@ -1,0 +1,40 @@
+{
+  "name": "button-clicker-react-baobab",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install",
+    "build:test": "npm run clean:test && webpack --config webpack.test.config.js --output-file dev/specs.js",
+    "build:dev:once": "npm run clean:dev && webpack",
+    "build:dev": "npm run build:dev:once -- --watch",
+    "clean:dev": "rm -rf dev",
+    "clean:test": "rm -f dev/specs.js",
+    "start": "webpack-dev-server --content-base dev",
+    "test": "npm run build:test -- -p && testem ci",
+    "test:watch": "npm run build:test -- --watch",
+    "test:dev": "testem"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "bower": "^1.4.1",
+    "core-js": "^0.9.6",
+    "eslint": "^0.21.2",
+    "eslint-loader": "^0.11.2",
+    "eslint-plugin-react": "^2.5.0",
+    "express": "^4.12.3",
+    "html-webpack-plugin": "^1.3.0",
+    "jasmine-core": "^2.3.0",
+    "node-libs-browser": "^0.5.2",
+    "testem": "^0.8.3",
+    "webpack": "^1.9.8",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.5.4",
+    "baobab": "^1.1.0",
+    "baobab-react": "^0.1.1",
+    "react": "^0.13.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "button-clicker-react-baobab",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "dev",
+    "dist",
+    "node_modules",
+    "bower_components",
+  ],
+  "devDependencies": {
+    "jasmine-jquery": "~2.1.0",
+    "jquery": "~2.1.4"
+  }
+}
